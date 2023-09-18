@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+    //   -------------------------------------> Normal
+      function normalfun(a, b, c) {
+        console.log(a + b * c);
+      }
+
+      normalfun(11, 22, 33);
+
+    //   -------------------------------------> Arrow
+
+      let arrowfun = (x, y) => console.log(x * y);
+
+      arrowfun(20, 22);
+
+    //   -------------------------------------> Return
+
+      function myname(fname, lname) {
+        var a = " hello my name is " + fname + lname;
+
+        return a;
+      }
+      var b = myname("parth", "virani");
+
+      console.log(b);
+
+    //   -------------------------------------> Arrow with return
+
+      let addnumber = (a, b) => {
+        return a + b;
+      };
+      console.log(addnumber(20, 40));
+
+    //   -------------------------------------> Arrow with return
+
+      let addnumber2 = (a, b) => {
+        return a + b;
+      };
+
+      var c = addnumber2(20, 40);
+      console.log(c);
+    </script>
+  </body>
+</html>
